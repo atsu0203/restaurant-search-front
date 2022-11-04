@@ -87,7 +87,7 @@ export const Foods = ({
           }
         });
       })
-  }, []);
+  }, [dispatch, match.params.restaurantsId]);
 
   return (
     <Fragment>
