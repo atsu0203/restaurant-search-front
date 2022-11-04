@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
 } from "react-router-dom";
 
@@ -14,7 +14,7 @@ import { Orders } from './containers/Orders.jsx';
 function App() {
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route
           exact
           path="/restaurants">
@@ -34,7 +34,7 @@ function App() {
           path="/orders">
           <Orders />
         </Route>
-      </Switch>
+      </Routes>
     </Router>
   );
 }
