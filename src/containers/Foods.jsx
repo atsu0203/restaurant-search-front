@@ -1,7 +1,7 @@
 // useStateを新たにimport
 import React, { Fragment, useReducer, useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 // components
 import { LocalMallIcon } from '../components/Icons';
@@ -62,10 +62,10 @@ const submitOrder = () => {
 }
 
 export const Foods = ({
-  match
 }) => {
   const [foodsState, dispatch] = useReducer(foodsReducer, foodsInitialState);
-
+  const { restaurantsId } = useParams();
+  
 
   // --- ここから追加 ---
   const initialState = {
@@ -78,7 +78,7 @@ export const Foods = ({
 
   useEffect(() => {
     dispatch({ type: foodsActionTyps.FETCHING });
-    fetchFoods(match.params.restaurantsId)
+    fetchFoods(restaurantsId)
       .then((data) => {
         dispatch({
           type: foodsActionTyps.FETCH_SUCCESS,
@@ -87,7 +87,7 @@ export const Foods = ({
           }
         });
       })
-  }, [dispatch, match.params.restaurantsId]);
+  }, [dispatch, restaurantsId]);
 
   return (
     <Fragment>
