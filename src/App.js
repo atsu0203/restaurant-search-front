@@ -15,17 +15,11 @@ function App() {
   return (
     <Router>
       <Routes>
-      <Route
-          path="/" element={<Restaurants />} >
-        </Route>
-        <Route
-          path="/restaurants" element={<Restaurants />} >
-        </Route>
-        <Route
-          path="/restaurants/:restaurantsId/foods" element={<Foods />}
-      />
-        <Route path="/orders" element={<Orders />}>
-        </Route>
+      <Route path="/" element={<Restaurants />} />
+      <Route path="restaurants" element={<Restaurants />} />
+      <Route path="restaurants/:restaurantsId/foods" element={<Foods />} />
+      <Route path="orders" element={<Orders />} />
+        {/* <Route component={NotFound} /> */}
       </Routes>
     </Router>
   );

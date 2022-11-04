@@ -23,6 +23,8 @@ import MainLogo from '../images/logo.png';
 import MainCoverImage from '../images/main-cover-image.png';
 import RestaurantImage from '../images/restaurant-image.jpg';
 
+const homeUrl = process.env.PUBLIC_URL;
+
 const HeaderWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -100,7 +102,7 @@ export const Restaurants = () => {
             </Fragment>
           :
             state.restaurantsList.map((item, index) =>
-              <Link to={`/restaurants/${item.id}/foods`} key={index} style={{ textDecoration: 'none' }}>
+              <Link to={homeUrl +`/restaurants/${item.id}/foods`} key={index} style={{ textDecoration: 'none' }}>
                 <RestaurantsContentWrapper>
                   <RestaurantsImageNode src={RestaurantImage} />
                   <MainText>{item.name}</MainText>
