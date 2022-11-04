@@ -61,6 +61,7 @@ const submitOrder = () => {
   console.log('登録ボタンが押された！')
 }
 
+// eslint-disable-next-line no-empty-pattern
 export const Foods = ({
 }) => {
   const [foodsState, dispatch] = useReducer(foodsReducer, foodsInitialState);
