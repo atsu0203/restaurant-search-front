@@ -20,7 +20,7 @@ import {
 import { fetchFoods } from '../apis/foods';
 
 // images
-import MainLogo from '../images/logo.png';
+// import MainLogo from '../images/logo.png';
 import FoodImage from '../images/food-image.jpg';
 
 // constants
@@ -37,13 +37,13 @@ const BagIconWrapper = styled.div`
   padding-top: 24px;
 `;
 
-const ColoredBagIcon = styled(LocalMallIcon)`
-  color: ${COLORS.MAIN};
-`;
+// const ColoredBagIcon = styled(LocalMallIcon)`
+//   color: ${COLORS.MAIN};
+// `;
 
-const MainLogoImage = styled.img`
-  height: 90px;
-`
+// const MainLogoImage = styled.img`
+//   height: 90px;
+// `
 
 const FoodsList = styled.div`
   display: flex;
