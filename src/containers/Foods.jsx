@@ -94,12 +94,13 @@ export const Foods = ({
     <Fragment>
       <HeaderWrapper>
         <Link to="/restaurants">
-          <MainLogoImage src={MainLogo} alt="main logo" />
+          Monzen Search
+          {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
         </Link>
         <BagIconWrapper>
-          <Link to="/orders">
-            <ColoredBagIcon fontSize="large" />
-          </Link>
+          {/* <Link to="/orders"> */}
+            {/* <ColoredBagIcon fontSize="large" /> */}
+          {/* </Link> */}
         </BagIconWrapper>
          </HeaderWrapper>
       <FoodsList>
