@@ -20,7 +20,7 @@ import {
 import { fetchFoods } from '../apis/foods';
 
 // images
-import MainLogo from '../images/logo.png';
+// import MainLogo from '../images/logo.png';
 import FoodImage from '../images/food-image.jpg';
 
 // constants
@@ -37,13 +37,13 @@ const BagIconWrapper = styled.div`
   padding-top: 24px;
 `;
 
-const ColoredBagIcon = styled(LocalMallIcon)`
-  color: ${COLORS.MAIN};
-`;
+// const ColoredBagIcon = styled(LocalMallIcon)`
+//   color: ${COLORS.MAIN};
+// `;
 
-const MainLogoImage = styled.img`
-  height: 90px;
-`
+// const MainLogoImage = styled.img`
+//   height: 90px;
+// `
 
 const FoodsList = styled.div`
   display: flex;
@@ -94,12 +94,13 @@ export const Foods = ({
     <Fragment>
       <HeaderWrapper>
         <Link to="/restaurants">
-          <MainLogoImage src={MainLogo} alt="main logo" />
+          Monzen Search
+          {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
         </Link>
         <BagIconWrapper>
-          <Link to="/orders">
-            <ColoredBagIcon fontSize="large" />
-          </Link>
+          {/* <Link to="/orders"> */}
+            {/* <ColoredBagIcon fontSize="large" /> */}
+          {/* </Link> */}
         </BagIconWrapper>
          </HeaderWrapper>
       <FoodsList>
