@@ -20,7 +20,7 @@ import { REQUEST_STATE } from '../constants';
 
 // images
 // import MainLogo from '../images/logo.png';
-import MainCoverImage from '../images/main-cover-image.png';
+// import MainCoverImage from '../images/main-cover-image.png';
 import RestaurantImage from '../images/restaurant-image.jpg';
 
 const homeUrl = process.env.PUBLIC_URL;
@@ -39,9 +39,9 @@ const MainCoverImageWrapper = styled.div`
   text-align: center;
 `;
 
-const MainCover = styled.img`
-  height: 600px;
-`;
+// const MainCover = styled.img`
+//   height: 600px;
+// `;
 
 const RestaurantsContentsList = styled.div`
   display: flex;
@@ -91,7 +91,7 @@ export const Restaurants = () => {
         {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
       </HeaderWrapper>
       <MainCoverImageWrapper>
-        <MainCover src={MainCoverImage} alt="main cover" />
+        {/* <MainCover src={MainCoverImage} alt="main cover" /> */}
       </MainCoverImageWrapper>
       <RestaurantsContentsList>
         {
