@@ -9,12 +9,12 @@ import { CountDownButton } from './Buttons/CountDownButton';
 import { OrderButton } from './Buttons/OrderButton';
 
 // images
-import OrderHeaderImage from '../images/order-header.png';
+// import OrderHeaderImage from '../images/order-header.png';
 
-const OrderHeader = styled.img`
-  width: 100%;
-  height: 350px;
-`;
+// const OrderHeader = styled.img`
+//   width: 100%;
+//   height: 350px;
+// `;
 
 const DescriptionWrapper = styled.div`
   padding: 0 8px 8px 8px;
@@ -63,7 +63,7 @@ export const FoodOrderDialog = ({
       open={isOpen}
       onClose={onClose}
     >
-      <OrderHeader src={OrderHeaderImage} alt="order header" />
+      {/* <OrderHeader src={OrderHeaderImage} alt="order header" /> */}
       <DialogTitle>
         {food.name}
       </DialogTitle>
