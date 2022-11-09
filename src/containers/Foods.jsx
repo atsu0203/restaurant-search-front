@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link, useParams } from "react-router-dom";
 
 // components
-import { LocalMallIcon } from '../components/Icons';
+// import { LocalMallIcon } from '../components/Icons';
 import { FoodWrapper } from '../components/FoodWrapper';
 import Skeleton from '@material-ui/lab/Skeleton';
 import { FoodOrderDialog } from '../components/FoodOrderDialog';
@@ -24,7 +24,7 @@ import { fetchFoods } from '../apis/foods';
 import FoodImage from '../images/food-image.jpg';
 
 // constants
-import { COLORS } from '../style_constants';
+// import { COLORS } from '../style_constants';
 import { REQUEST_STATE } from '../constants';
 
 const HeaderWrapper = styled.div`
