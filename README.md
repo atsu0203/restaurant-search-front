@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+API側はmonzen-searchで作成しております。
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 <!-- ## Available Scripts
 
