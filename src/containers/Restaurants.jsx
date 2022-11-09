@@ -87,7 +87,8 @@ export const Restaurants = () => {
   return (
     <Fragment>
       <HeaderWrapper>
-        <MainLogoImage src={MainLogo} alt="main logo" />
+        Monzen Search
+        {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
       </HeaderWrapper>
       <MainCoverImageWrapper>
         <MainCover src={MainCoverImage} alt="main cover" />
