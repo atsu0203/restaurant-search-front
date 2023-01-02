@@ -94,7 +94,7 @@ export const Foods = ({
     <Fragment>
       <HeaderWrapper>
         <Link to="/restaurants">
-          Monzen  Search2
+          Monzen Search2
           {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
         </Link>
         <BagIconWrapper>
