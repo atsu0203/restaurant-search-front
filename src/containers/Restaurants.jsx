@@ -87,7 +87,7 @@ export const Restaurants = () => {
   return (
     <Fragment>
       <HeaderWrapper>
-        Monzen Search
+        Monzen Search 門前仲町
         {/* <MainLogoImage src={MainLogo} alt="main logo" /> */}
       </HeaderWrapper>
       <MainCoverImageWrapper>
